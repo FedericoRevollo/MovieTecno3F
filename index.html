@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieTecno3F</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>MovieTecno3F</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="informacion">
+        <h2>Sobre MovieTecno3F</h2>
+        <p>MovieHub es una página dedicada a los amantes del cine, donde puedes descubrir información sobre las películas más actuales y las más galardonadas en la industria cinematográfica.</p>
+        <p>Aquí encontrarás datos relevantes, desde los títulos más populares hasta las sinopsis que te darán una idea de qué esperar de cada película.</p>
+        <p>Nos esforzamos por mantenerte actualizado con las mejores recomendaciones del cine, ofreciendo detalles visuales y descripciones para que elijas tu próxima aventura cinematográfica.</p>
+        <p>Además, nuestra integración con TheMovieDB nos permite mostrarte en tiempo real las películas más vistas y mejor valoradas por críticos y espectadores.</p>
+        <p>Únete a nosotros y explora un mundo lleno de historias emocionantes, actuaciones memorables y producciones que han dejado huella en el cine.</p>
+    </section>
+
+
+    <!-- Sección de API -->
+    <section id="api">
+        <h2>Películas </h2>
+        <div id="movies"></div>
+    </section>
+
+    <!-- Sección de Formulario -->
+    <section id="formulario">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <form id="subscription-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="name-error"></span>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
